@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("fonts/ProximaNova-Regular.otf");
+}
+
+body {
+  height: 100vh;
+  background-color: whitesmoke;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  font-family: "Proxima";
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  margin-top: 9.5%;
+  position: absolute;
+  /* left: 50%; */
+  transform: translateX(-50%);
+  z-index: 1;
+  margin-bottom: 5%;
+}
+
+#me {
+  display: inline-block;
+  margin: 2.5em;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#me img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+#allcontent {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  margin: 1.5em;
+  color: rgb(56, 53, 53);
+  padding: 1.5em;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 350;
+  color: #000000;
+}
+
+#mail {
+  text-transform: uppercase;
+  color: rgb(56, 53, 53) !important;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 0;
+}
+
+#mail:hover {
+  opacity: 0.4;
+  transition: 0.7s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0.4em;
+  cursor: pointer;
+  margin: 0.4em;
+}
+
+ul:hover li {
+  opacity: 0.4;
+  transition: 0.7s;
+}
+
+ul:hover li:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+@media screen and (min-width: 720px) {
+  #allcontent {
+    display: inline-block;
+  }
+
+  #wrapper {
+    left: 30%;
+  }
+
+  #allmedia {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #allcontent {
+    display: block;
+  }
+
+  #wrapper {
+    left: 45%;
+  }
+
+  #allmedia {
+    width: 70%;
+    margin-top: 12px;
+  }
+}
+
+/*@media screen and (min-device-width: 800px) and (max-width: 1024px) {
+  #me {
+    top: 10%;
+    left: 30%;
+    width: 30vh;
+    height: 30vh;
+  }
+
+  #allcontent {
+    width: 100%;
+    top: 45%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  #me {
+    top: 10%;
+    left: 27%;
+    width: 25vh;
+    height: 25vh;
+  }
+
+  #allcontent {
+    width: 100%;
+    top: 37%;
+    left: -3%;
+  }
+
+  #allmedia {
+    width: 70%;
+  }
+}*/
