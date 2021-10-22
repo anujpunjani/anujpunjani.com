@@ -1,0 +1,135 @@
+.loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: whitesmoke;
+    animation: hidden 0.25s linear forwards;
+    animation-delay: 1.75s;
+}
+
+@keyframes hidden {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.verticalcover {
+    width: 8px;
+    background-color: black;
+    height: 120vh;
+    position: absolute;
+}
+
+.verticalcover1 {
+    left: 49.9%;
+    animation: slidebottom 0.5s ease-in-out forwards;
+}
+
+.verticalcover2 {
+    left: 48.8%;
+    animation: slidetop 0.5s ease-in-out forwards;
+}
+
+@media screen and (max-width: 720px) {
+    .verticalcover2 {
+        left: 46.5%;
+    }
+  }
+
+@keyframes slidebottom {
+    from {
+        top: -100vh;
+        
+    }
+
+    to {
+        top: 0vh;
+    }
+}
+
+@keyframes slidetop {
+    from {
+        bottom: -100vh;
+    }
+
+    to {
+        bottom: 0vh;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container img {
+    width: 200px;
+}
+
+.cover {
+    position: absolute;
+    height: 120vh;
+    background-color: black;
+}
+
+.cover1 {
+    right: 51%;
+    animation: slideleft 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.cover2 {
+    left: 49.8%;
+    width: 0;
+    animation: slideright 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideleft {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+@keyframes slideright {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+.whitecover {
+    position: absolute;
+    height: 120vh;
+    background-color: whitesmoke;
+}
+
+.whitecover1 {
+    right: 50%;
+    animation: slideleft 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.whitecover2 {
+    left: 50%;
+    width: 0;
+    animation: slideright 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
